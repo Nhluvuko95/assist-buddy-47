@@ -116,6 +116,7 @@ export async function generatePlan(tasks: PlannerTask[]): Promise<PlannerResult>
         : "Total load fits comfortably inside a single working day with buffer.",
     ],
     ranked,
+    schedule,
     risks: [
       "Deadlines were inferred from the dates you entered; confirm them against your calendar.",
       "Estimates assume uninterrupted blocks — add 20% buffer if your day is meeting-heavy.",
