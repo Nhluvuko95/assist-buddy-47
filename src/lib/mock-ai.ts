@@ -246,7 +246,7 @@ export async function generateMeetingSummary(notes: string): Promise<MeetingResu
 
   const headline = lines[0] ?? "Meeting notes";
   const summary = `${headline}. The discussion covered ${lines.length} captured points, resulting in ${decisions.length} recorded decision${decisions.length === 1 ? "" : "s"} and ${actionItems.length} action item${actionItems.length === 1 ? "" : "s"} with named owners. ${
-    decisions.length
+    decisions[0]
       ? `The most consequential outcome was: ${decisions[0].toLowerCase()}.`
       : "No firm decisions were recorded — a follow-up may be needed to close the loop."
   } ${
