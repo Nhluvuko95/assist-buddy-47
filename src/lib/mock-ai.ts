@@ -237,8 +237,8 @@ export async function generateMeetingSummary(notes: string): Promise<MeetingResu
         .replace(/\b(?:by|due)\s+[^,.]+/i, "")
         .replace(/[,.\s]+$/, "")
         .trim() || clean,
-      owner: ownerMatch ? ownerMatch[1] : "Unassigned",
-      due: dueMatch ? dueMatch[1].trim() : "No date given",
+      owner: ownerMatch?.[1] ?? "Unassigned",
+      due: dueMatch?.[1]?.trim() ?? "No date given",
     };
   });
 
