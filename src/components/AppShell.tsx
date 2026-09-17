@@ -116,7 +116,7 @@ export function AppShell({ children }: { children: ReactNode }) {
       </Sidebar>
 
       <SidebarInset>
-        <header className="sticky top-0 z-20 flex h-14 items-center gap-3 border-b border-border bg-background/85 px-4 backdrop-blur">
+        <header className="sticky top-0 z-20 relative flex h-14 items-center gap-3 border-b border-border bg-background/85 px-4 backdrop-blur">
           <SidebarTrigger className="-ml-1" />
           <Separator orientation="vertical" className="h-5" />
           <span className="font-title pointer-events-none absolute left-1/2 -translate-x-1/2 text-base font-bold tracking-tight">
