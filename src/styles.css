@@ -54,6 +54,7 @@
   --color-highlight-foreground: var(--highlight-foreground);
   --font-sans: "DM Sans", ui-sans-serif, system-ui, sans-serif;
   --font-display: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+  --font-title: "Playfair Display", ui-serif, Georgia, serif;
   --shadow-card: var(--shadow-card);
   --color-chart-1: var(--chart-1);
   --color-chart-2: var(--chart-2);

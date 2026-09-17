@@ -116,10 +116,12 @@ export function AppShell({ children }: { children: ReactNode }) {
       </Sidebar>
 
       <SidebarInset>
-        <header className="sticky top-0 z-20 flex h-14 items-center gap-3 border-b border-border bg-background/85 px-4 backdrop-blur">
+        <header className="sticky top-0 z-20 relative flex h-14 items-center gap-3 border-b border-border bg-background/85 px-4 backdrop-blur">
           <SidebarTrigger className="-ml-1" />
           <Separator orientation="vertical" className="h-5" />
-          <span className="font-display text-sm font-semibold tracking-tight">VXK_Assistant AI</span>
+          <span className="font-title pointer-events-none absolute left-1/2 -translate-x-1/2 text-base font-bold tracking-tight">
+            VXK_Assistant AI
+          </span>
           <span className="ml-auto hidden text-xs text-muted-foreground sm:inline">Demo workspace</span>
         </header>
         <main className="mx-auto w-full max-w-6xl space-y-6 px-4 py-6 sm:px-6 sm:py-8">{children}</main>
